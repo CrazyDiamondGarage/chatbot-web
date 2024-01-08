@@ -58,7 +58,7 @@ export function AccountModal({ open, close }: Props) {
   }
 
   return (
-    <Modal open={open} footer={null} closable={false} width={560}>
+    <Modal open={open} footer={null} centered closable={false} width={560}>
       <div className="my-2">
         <Form form={form} layout="vertical">
           <FormItem
