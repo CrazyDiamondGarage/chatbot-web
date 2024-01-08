@@ -34,7 +34,7 @@ export default function Search() {
       <div className="h-72px border-b-1 flex-center fixed left-0 top-0 w-full border-gray-200 bg-white p-4 dark:border-b-gray-500 dark:bg-gray-800">
         <HiChevronLeft
           onClick={() => navigate(-1)}
-          className="mr-3 h-6 w-6 text-pink-500 hover:cursor-pointer"
+          className="mr-3 h-7 w-7 text-pink-500 hover:cursor-pointer"
         />
         <Input
           placeholder="Search"

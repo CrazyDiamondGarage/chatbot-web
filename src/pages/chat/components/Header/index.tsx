@@ -31,7 +31,7 @@ export function Header() {
       <div className="flex-between max-w-720px mx-auto h-full">
         <HiChevronLeft
           onClick={toHome}
-          className="h-7 w-7 hover:cursor-pointer"
+          className="h-7 w-7 text-pink-500 hover:cursor-pointer"
         />
         <div className="text-center">
           <div className="font-600">{character.name}</div>
