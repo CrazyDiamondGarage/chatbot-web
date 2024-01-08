@@ -28,7 +28,7 @@ export function Header() {
 
   return (
     <div className="h-full w-full rounded-tl-xl rounded-tr-xl border-b border-b-gray-200 bg-white px-4 py-2.5 dark:border-b-gray-500 dark:bg-gray-800">
-      <div className="flex-between max-w-540px mx-auto h-full">
+      <div className="flex-between max-w-720px mx-auto h-full">
         <HiChevronLeft
           onClick={toHome}
           className="h-7 w-7 hover:cursor-pointer"
