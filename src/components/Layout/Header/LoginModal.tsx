@@ -175,6 +175,7 @@ export function LoginModal() {
   return (
     <Modal
       width={420}
+      centered
       footer={null}
       open={!user.uid && loginModalState !== LoginModalState.CLOSED}
       onCancel={() => setLoginModalState(LoginModalState.CLOSED)}

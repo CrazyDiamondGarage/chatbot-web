@@ -49,11 +49,11 @@ export default function Chat() {
       <div className="h-72px w-full">
         <Header />
       </div>
-      <div className="max-w-540px mx-auto flex h-[calc(100%-72px)] w-full flex-col justify-center py-6">
+      <div className="max-w-720px mx-auto flex h-[calc(100%-72px)] w-full flex-col justify-center py-6">
         <div className="min-h-0 w-full flex-1">
           <Content />
         </div>
-        <div className="h-60px w-full">
+        <div className="max-h-120px min-h-80px w-full">
           <Footer />
         </div>
       </div>
