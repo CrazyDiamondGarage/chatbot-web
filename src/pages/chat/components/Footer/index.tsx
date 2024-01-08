@@ -4,6 +4,8 @@ import { HiArrowCircleUp } from 'react-icons/hi'
 
 import { useChatStore } from '@/stores/chat'
 
+const { TextArea } = Input
+
 export function Footer() {
   const { send, loading } = useChatStore()
   const [message, setMessage] = useState('')
@@ -22,7 +24,8 @@ export function Footer() {
   }
 
   function handleKeydown(e: KeyboardEvent) {
-    if (e.keyCode !== 13) {
+    console.log()
+    if (e.key !== 'Enter') {
       return
     }
 
@@ -40,12 +43,13 @@ export function Footer() {
 
   return (
     <div className="flex-between h-full w-full py-4">
-      <Input
+      <TextArea
         value={message}
         onChange={(e) => setMessage(e.target.value)}
         onPressEnter={handleKeydown}
         placeholder="Type your message"
-        className="h-9 rounded-full"
+        className="rounded-xl"
+        autoSize={{ minRows: 1, maxRows: 4 }}
       />
       {loading ? (
         <HiArrowCircleUp className="ml-3 h-11 w-11 text-#E0E5F2" />
