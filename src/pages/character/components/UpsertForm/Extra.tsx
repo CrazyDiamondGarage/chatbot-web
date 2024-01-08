@@ -13,7 +13,7 @@ export const extras = {
       for character creation.
     </>
   ),
-  userName: `Name your character, and you can change it later if needed.`,
+  userName: `Choose a name for your character, which you can change if desired.`,
   avatar: `Upload your character's avatar.`,
   visibility: `Who is authorized to talk to them?`,
   introduction: `Character introduction for a detail page, not influencing prompts or reply effect.`,
