@@ -13,14 +13,14 @@ export const extras = {
       for character creation.
     </>
   ),
-  userName: `Name your character, and you can change it later if needed.`,
+  userName: `Choose a name for your character, which you can change if desired.`,
   avatar: `Upload your character's avatar.`,
   visibility: `Who is authorized to talk to them?`,
   introduction: `Character introduction for a detail page, not influencing prompts or reply effect.`,
   tags: `Tag your character and Separate your Tags with “ , ” (maximum 7 tags only).`,
   greeting: `This message will be sent to users as the first message. It is recommended to write a greeting that can express personality or background.'`,
   personality: `Enrich the setting of your character.`,
-  scenario: `The conversation will take place in the scenario you have fill.`,
+  scenario: `The conversation will unfold in the setting you provide.`,
   exampleDialogs: `Example chat between you and the character. This section is very important for teaching your
   character how they should speak.`,
 }
