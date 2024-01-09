@@ -1,16 +1,15 @@
 export const extras = {
   quickStart: (
     <>
-      Import your JSON file / PNG file / Character card. For more information,
-      please consult{' '}
+      Import your JSON / PNG files. Check{' '}
       <a
         className="text-blue-500"
         href="https://clear-raven-bc0.notion.site/How-to-create-characters-with-JSON-or-PNG-351fa6d783ca4fb2946bcc1f44169db1"
         target="_blank"
       >
-        the JSON or PNG files guide
+        JSON / PNG guides
       </a>{' '}
-      for character creation.
+      for quick start.
     </>
   ),
   userName: `Choose a name for your character, which you can change if desired.`,
