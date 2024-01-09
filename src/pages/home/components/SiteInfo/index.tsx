@@ -36,7 +36,7 @@ export function SiteInfo() {
           type="link"
           className="text-10px px-0 text-gray-400 dark:text-gray-600"
         >
-          © 2023 Juicy AI
+          © {new Date().getFullYear()} Juicy AI
         </Button>
       </div>
     </div>
