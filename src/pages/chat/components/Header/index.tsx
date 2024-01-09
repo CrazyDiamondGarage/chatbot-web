@@ -10,11 +10,16 @@ import { useChatStore } from '@/stores/chat'
 
 import { ResetChatModal } from './ResetChatModal'
 
-export function Header() {
+type Props = {
+  resetChat: () => Promise<void>
+}
+
+export function Header({ resetChat }: Props) {
   const navigate = useNavigate()
   const { character, setCharacter } = useCharacterStore()
   const { reset } = useChatStore()
   const [resetChatModalOpen, setResetChatModalOpen] = useState(false)
+  const [loading, setLoading] = useState(false)
 
   function toggleStar() {
     if (character.is_liked) {
@@ -32,9 +37,10 @@ export function Header() {
     navigate(-1)
   }
 
-  function resetChat() {
-    reset()
-    //TODO: reset chatbot
+  async function confirm() {
+    setLoading(true)
+    await resetChat()
+    setLoading(false)
     setResetChatModalOpen(false)
   }
 
@@ -72,8 +78,9 @@ export function Header() {
       <ResetChatModal
         characterName={character.name || 'same character'}
         open={resetChatModalOpen}
+        loading={loading}
         onCancle={() => setResetChatModalOpen(false)}
-        onConfirm={() => resetChat()}
+        onConfirm={() => confirm()}
       />
     </>
   )

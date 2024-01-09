@@ -3,6 +3,7 @@ import { Button, Modal } from 'antd'
 type Props = {
   characterName: string
   open: boolean
+  loading: boolean
   onCancle: () => void
   onConfirm: () => void
 }
@@ -10,6 +11,7 @@ type Props = {
 export function ResetChatModal({
   characterName,
   open,
+  loading,
   onCancle,
   onConfirm,
 }: Props) {
@@ -27,6 +29,7 @@ export function ResetChatModal({
             type="primary"
             size="large"
             className="ml-3"
+            loading={loading}
             onClick={onConfirm}
           >
             Confirm
