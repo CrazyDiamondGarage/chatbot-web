@@ -134,7 +134,11 @@ export function UpsertForm() {
         </FormItem>
 
         <FormItem label="Avatar" required extra={extras.avatar}>
-          <AvatarUpload avatar={avatar} setAvatar={setAvatar} />
+          <AvatarUpload
+            avatar={avatar}
+            setAvatar={setAvatar}
+            aspectRatio={3 / 4}
+          />
         </FormItem>
 
         <FormItem
