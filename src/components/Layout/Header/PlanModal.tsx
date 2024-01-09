@@ -79,7 +79,7 @@ export function PlanModal({ open, close }: Props) {
   }
 
   return (
-    <Modal open={open} footer={null} width={1050} onCancel={close}>
+    <Modal open={open} footer={null} width={1050} centered onCancel={close}>
       <div className="mx-24px mt-12px mb-24px ">
         <div>
           {!!planRemainDays && (

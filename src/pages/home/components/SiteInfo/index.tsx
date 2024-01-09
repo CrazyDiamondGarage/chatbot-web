@@ -1,9 +1,14 @@
 import { Button } from 'antd'
 
+import { CreatorGuideline } from '@/components/CreatorGuideline'
+
 export function SiteInfo() {
   return (
     <div className="mt-24px">
-      <div className="text-12px flex items-center gap-x-2 text-gray-500">
+      <div className="text-12px mb-12px text-gray-500">
+        <CreatorGuideline />
+      </div>
+      <div className="text-12px flex flex-wrap items-center gap-x-2 text-gray-500">
         <Button type="link" className="text-12px px-0 text-gray-500">
           Contact Us
         </Button>
@@ -31,7 +36,7 @@ export function SiteInfo() {
           type="link"
           className="text-10px px-0 text-gray-400 dark:text-gray-600"
         >
-          © 2023 Juicy AI
+          © {new Date().getFullYear()} Juicy AI
         </Button>
       </div>
     </div>

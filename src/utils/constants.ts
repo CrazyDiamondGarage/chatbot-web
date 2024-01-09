@@ -8,3 +8,17 @@ export const KEYS = {
 export const REGS = {
   EMAIL: /^[A-Za-z0-9+_.-]+@(.+)$/,
 }
+
+export const SEARCH_KEYWORDS = [
+  'Kanroji',
+  'Miguel',
+  'GHost',
+  'Genshin',
+  'Gojo',
+  'Boyfriend',
+  'Lyra',
+  'Megumi',
+  'Maid',
+  'Eva',
+  'Furry',
+]

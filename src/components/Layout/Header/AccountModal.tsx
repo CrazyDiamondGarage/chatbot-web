@@ -1,7 +1,7 @@
 import { Button, Form, Input, Modal, message } from 'antd'
 import { useEffect, useState } from 'react'
-import { FaUpload } from 'react-icons/fa'
 import { HiArrowLeft } from 'react-icons/hi'
+import { MdSaveAlt } from 'react-icons/md'
 
 import { updateUser } from '@/api/user'
 import { AvatarUpload } from '@/components/AvatarUpload'
@@ -58,7 +58,7 @@ export function AccountModal({ open, close }: Props) {
   }
 
   return (
-    <Modal open={open} footer={null} closable={false} width={560}>
+    <Modal open={open} footer={null} centered closable={false} width={560}>
       <div className="my-2">
         <Form form={form} layout="vertical">
           <FormItem
@@ -73,6 +73,7 @@ export function AccountModal({ open, close }: Props) {
             <AvatarUpload
               avatar={avatar}
               setAvatar={setAvatar}
+              width="120px"
               height="120px"
             />
           </FormItem>
@@ -88,7 +89,7 @@ export function AccountModal({ open, close }: Props) {
             loading={loading}
             className="flex-center h-10"
           >
-            <FaUpload className="mr-2 h-5 w-5" />
+            <MdSaveAlt className="mr-2 h-5 w-5" />
             Save
           </Button>
           <Button block onClick={close} className="flex-center mt-3 h-10">
