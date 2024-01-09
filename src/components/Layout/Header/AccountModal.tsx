@@ -73,6 +73,7 @@ export function AccountModal({ open, close }: Props) {
             <AvatarUpload
               avatar={avatar}
               setAvatar={setAvatar}
+              width="120px"
               height="120px"
             />
           </FormItem>

@@ -11,6 +11,7 @@ export type Props = {
   setAvatar: (value: string) => void
   width?: string
   height?: string
+  aspectRatio?: number
 }
 
 export function AvatarUpload({
@@ -18,6 +19,7 @@ export function AvatarUpload({
   setAvatar,
   width = '120px',
   height = '160px',
+  aspectRatio = 1,
 }: Props) {
   const fileRef = useRef<HTMLInputElement | null>(null)
   const fileNameRef = useRef('')
@@ -127,8 +129,8 @@ export function AvatarUpload({
           <Cropper
             ref={cropperRef}
             zoomTo={0.5}
-            initialAspectRatio={0.75}
-            aspectRatio={0.75}
+            initialAspectRatio={aspectRatio}
+            aspectRatio={aspectRatio}
             preview=".img-preview"
             src={image}
             viewMode={1}
