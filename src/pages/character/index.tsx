@@ -1,6 +1,6 @@
+import { CreatorGuideline } from '@/components/CreatorGuideline'
 import { useCharacterStore } from '@/stores/character'
 
-import { CreatorGuideline } from './components/CreatorGuideline'
 import { UpsertForm } from './components/UpsertForm'
 
 export default function Character() {

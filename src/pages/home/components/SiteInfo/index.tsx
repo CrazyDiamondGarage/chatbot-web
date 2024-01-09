@@ -1,20 +1,16 @@
 import { Button } from 'antd'
 
+import { CreatorGuideline } from '@/components/CreatorGuideline'
+
 export function SiteInfo() {
   return (
     <div className="mt-24px">
+      <div className="text-12px mb-12px text-gray-500">
+        <CreatorGuideline />
+      </div>
       <div className="text-12px flex flex-wrap items-center gap-x-2 text-gray-500">
         <Button type="link" className="text-12px px-0 text-gray-500">
           Contact Us
-        </Button>
-        <div>|</div>
-        <Button
-          type="link"
-          href="https://clear-raven-bc0.notion.site/JuicyAI-Creation-Guide-cba9403dfe1a45fa96dafcf0884d848d?pvs=4"
-          target="_blank"
-          className="text-12px flex items-center px-0 text-gray-500"
-        >
-          Creation Guide
         </Button>
         <div>|</div>
         <Button
