@@ -35,6 +35,7 @@ export function Header() {
   function resetChat() {
     reset()
     //TODO: reset chatbot
+    setResetChatModalOpen(false)
   }
 
   return (
